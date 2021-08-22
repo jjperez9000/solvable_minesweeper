@@ -1,0 +1,4 @@
+.row { display: flex; font-size: 15.5px; text-align: center; color: red }
+.cell { width: 30px; height: 30px; margin: 0px; border: 1px solid black; background-color: lightgray;}
+.fakeCell { width: 30px; height: 30px; margin: 0px; border: 1px solid black; background-color: lightgray;}
+.divider { width: 30px; height: 30px; margin: 0px; border: 1px white; background-color: white;}

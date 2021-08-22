@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Minesweeper</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+    <form style="width: 1032px; opacity: 1; background: rgb(255, 255, 255); color: rgb(0, 0, 0); padding: 10px; top: 129.7px; left: 258px; z-index: 100;">
+        <p style="margin-top: 0px;">Board Configuration</p>
+        Width<input id="numCols" type="text">
+        <br>
+        Height<input id="numRows" type="text">
+        <br>
+        Mines<input id="numBombs" type="text">
+    </form>
+    <div style="width: 1032px; opacity: 1; background: rgb(255, 255, 255); color: rgb(0, 0, 0); padding: 20px; top: 129.7px; left: 258px; z-index: 100;">
+        <button onclick="makeBoard()">Make Board</button>
+    </div>
+    <div id="boards">
+        <div id="gameBoard" oncontextmenu="return false">
+        </div>
+        <br>
+        <div style="width: 1032px; opacity: 1; background: rgb(255, 255, 255); color: rgb(0, 0, 0); padding: 20px; top: 129.7px; left: 258px; z-index: 100;">
+            <button onclick="hideSolution()">Show Solved Board</button>
+        </div>
+        <br>
+        <br>
+        <div id="solutionBoard" style="display: none"></div>
+    </div>
+</body>
+
+<script type="text/javascript" src="minesweeper.js"></script>
